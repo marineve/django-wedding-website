@@ -1,15 +1,21 @@
 <!-- templates/registration/login.html -->
-{% extends 'base.html' %}
-
-{% block title %}Login{% endblock %}
-
-{% block content %}
-    <h2>Login</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
+{% load staticfiles %}
+{% block page_head %}
+    <!-- Custom CSS -->
+    <link href="{% static 'bigday/css/creative.css' %}" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
+{% endblock %}
+{% block page_content %}
+    <body>
+        <div id="login-background"></div>
+        <div id="login-form">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
 {% endblock %}
 
 {#<html>#}
@@ -43,6 +49,6 @@
 {#<input type="hidden" name="next" value="{{ next }}" />#}
 {#</form>#}
 {##}
-{# Assumes you setup the password_reset view in your URLconf #}
+{# Assumes you setup the password_reset view in your URLconf#}
 {#<p><a href="{% url 'password_reset' %}">Lost password?</a></p>#}
 {#</html>#}

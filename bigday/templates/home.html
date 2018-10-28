@@ -5,155 +5,150 @@
     <link href="{% static 'bigday/css/creative.css' %}" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
 {% endblock %}
-{% block content %}
-    {% if user.is_authenticated %}
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">Mottus Wedding</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="page-scroll" href="#main-header">Home</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#event">Event</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#victoria">Victoria</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#other-stuff">Everything Else</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+{% block page_content %}
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Mottus Wedding</a>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
-        {% block main %}
-        <header id="main-header">
-            <div class="header-content">
-                <div class="header-content-inner">
-                    <h1>Marin & Riley are getting married!</h1>
-                    {% comment %}
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#main-header">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#event">Event</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#victoria">Victoria</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#other-stuff">Everything Else</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    {% block main %}
+    <header id="main-header">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Marin & Riley are getting married!</h1>
+                {% comment %}
+                <hr>
+                <h2>Another header</h2>
+                <a href="#welcome" class="btn btn-info btn-xl page-scroll">Welcome</a>
+                <a href="#event" class="btn btn-primary btn-xl page-scroll">Friday</a>
+                <a href="#reception-event" class="btn btn-success btn-xl page-scroll">Saturday</a>
+                {% endcomment %}
+            </div>
+        </div>
+    </header>
+    <section class="bg-info" id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Welcome!</h2>
                     <hr>
-                    <h2>Another header</h2>
-                    <a href="#welcome" class="btn btn-info btn-xl page-scroll">Welcome</a>
-                    <a href="#event" class="btn btn-primary btn-xl page-scroll">Friday</a>
-                    <a href="#reception-event" class="btn btn-success btn-xl page-scroll">Saturday</a>
-                    {% endcomment %}
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                    <p>
+                        Looking forward to seeing everyone soon!
+                    </p>
+                    <p class="pull-right">- Marin and Riley</p>
                 </div>
             </div>
-        </header>
-        <section class="bg-info" id="welcome">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Welcome!</h2>
-                        <hr>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <p>
-                            Looking forward to seeing everyone soon!
-                        </p>
-                        <p class="pull-right">- Marin and Riley</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="no-padding" id="navigation">
-            <div class="container-fluid">
-                <div class="row no-gutter">
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#event" class="portfolio-box page-scroll">
-                            <img src="{% static 'bigday/images/invite-background.jpg' %}" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-name">
-                                        The Event
-                                    </div>
+        </div>
+    </section>
+    <section class="no-padding" id="navigation">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#event" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/invite-background.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    The Event
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#victoria" class="portfolio-box page-scroll">
-                            <img src="{% static 'bigday/images/inside-inn.jpg' %}" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-name">
-                                        Inn at Laurel Point
-                                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#victoria" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/inside-inn.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Inn at Laurel Point
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#story" class="portfolio-box page-scroll">
-                            <img src="{% static 'bigday/images/bernie.jpg' %}" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-name">
-                                        Our Story
-                                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#story" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/bernie.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Our Story
                                 </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </section>
-        {% include 'partials/event.html' %}
-        <section id="victoria">
-            {% include 'partials/victoria.html' %}
-        </section>
-    {% comment %}
-            {% include 'partials/wedding-party.html' %}
-    {% endcomment %}
-        <section id="other-stuff" class="bg-primary">
-        </section>
-        <section id="story" class="bg-dark">
-            {% include 'partials/story.html' %}
-        </section>
-        {% include 'partials/proposal.html' %}
-        <section id="contact" class="bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Contact us!</h2>
-                        <hr class="primary">
-                        <p>If you have any questions don't hesitate to reach out!</p>
-                    </div>
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                        <p><a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
-                    </div>
+        </div>
+    </section>
+    {% include 'partials/event.html' %}
+    <section id="victoria">
+        {% include 'partials/victoria.html' %}
+    </section>
+{% comment %}
+        {% include 'partials/wedding-party.html' %}
+{% endcomment %}
+    <section id="other-stuff" class="bg-primary">
+    </section>
+    <section id="story" class="bg-dark">
+        {% include 'partials/story.html' %}
+    </section>
+    {% include 'partials/proposal.html' %}
+    <section id="contact" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact us!</h2>
+                    <hr class="primary">
+                    <p>If you have any questions don't hesitate to reach out!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
                 </div>
             </div>
-        </section>
-        {% endblock %}
-        <p><a href="{% url 'logout' %}">logout</a></p>
-    {% else %}
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">login</a>
-    {% endif %}
+        </div>
+    </section>
+    {% endblock %}
+    <p><a href="{% url 'logout' %}">logout</a></p>
 {% endblock %}
 {% block page_js %}
     <!-- Plugin JavaScript -->
