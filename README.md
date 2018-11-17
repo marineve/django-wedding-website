@@ -1,7 +1,8 @@
 # Marin and Riley's wedding website
 
 ## Installation
-It's recommended that you setup a virtualenv before development.
+It's recommended that you setup a virtualenv before development. In your 
+`mkvirtualenv -a . wedding`
 
 Then just install requirements, migrate, and runserver to get started:
 
